@@ -1,0 +1,26 @@
+<div class="post">
+  <ion-item lines="none">
+    <ion-avatar slot="start">
+      <ion-img src="/assets/avatars/{{this.post.usuario.avatar}}"></ion-img>
+    </ion-avatar>
+    <ion-label>
+      <h3>{{post.usuario.nombre}}</h3>
+      <p>{{post.usuario.email}}</p>
+    </ion-label>
+  </ion-item>
+  <ion-slides pager="true">
+    <ion-slide class="image-slide" [style]="img1 |domSanitizer"> </ion-slide>
+    <ion-slide class="image-slide" [style]="img1 |domSanitizer"> </ion-slide>
+    <ion-slide class="image-slide" [style]="img1 |domSanitizer"> </ion-slide>
+  </ion-slides>
+
+  <ion-item lines="none">
+    <ion-icon name="heart-outline"></ion-icon>
+    <ion-icon slot="end" name="bookmark"></ion-icon>
+  </ion-item>
+  <ion-item lines="none">
+    <ion-label text-wrap>
+      <p>{{post.mensaje}}</p>
+    </ion-label>
+  </ion-item>
+</div>
